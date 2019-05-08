@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pigeon</title>
+  </head>
+  <body>
+    <a href="tree.html">Tree</a>
+
+    <script>
+    var Datastore = require('nedb'),db = new Datastore({ filename: './data/pigeon.db', autoload: true })
+      // var newUrl = 'lavatchi.com' // This is simple VAR for updating the URL
+      // var restaurant = {
+      //     name: 'Lavatchi',
+      //     url: 'zippax.com'
+      // }
+
+      // Insert
+      // db.insert(restaurant)
+
+      // Update
+      // db.update({ _id: '9JzcmZLoBbCR1FRi' }, { $set: { url: newUrl } }, { multi: true })
+
+      // fetch
+      // db.find({}, function(err, docs) {
+      //     docs.forEach(function(d) {
+      //         console.log(d.url)
+      //         var res = document.getElementById("result").innerHTML = d.url
+      //     })
+      // })
+
+      // Find Where
+      // db.find({ url: 'lavatchi.com'}, function(err, docs) {
+      //     docs.forEach(function(d) {
+      //         console.log(d._id)
+      //     })
+      // })
+
+      // Delete
+      // db.remove({_id:'X7tMufvPV6C5uSZo'})
+
+
+
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
